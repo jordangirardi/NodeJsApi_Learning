@@ -29,7 +29,7 @@ class SendMailService{
 
         const htmlHandleBars = mailTemplateParse(variables);
 
-        const message = await this.client.sendMail({ 
+        const message = await this.client.sendMail({
             to,
             subject, 
             html: htmlHandleBars,
